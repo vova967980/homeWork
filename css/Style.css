@@ -1,0 +1,222 @@
+body{
+    margin: 0 100px;
+    box-sizing: border-box;
+    min-width: 300px;
+}
+
+.globalMenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+.logotip>img{
+    width:60px;
+    height:60px;
+}
+
+.icons1>a>img {
+    width:25px;
+    height:25px;
+    margin-left: 20px;
+}
+
+.botgR{
+    background-image: url("https://img5.goodfon.ru/wallpaper/nbig/0/c6/tsvety-vetki-vishnia-vesna-rozovye-tsvetenie-boke-sliva-v-ts.jpg");
+    height: 200px;
+    filter: blur(5px);
+    margin: -200px -100px 0 -100px;
+    z-index: -1;
+    position: relative;
+}
+
+.backgr{
+    background-image: url("https://img5.goodfon.ru/wallpaper/nbig/0/c6/tsvety-vetki-vishnia-vesna-rozovye-tsvetenie-boke-sliva-v-ts.jpg");
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    height: 200px;
+    min-width: 300px;
+    object-fit: cover;
+
+}
+
+.postaquastion{
+    box-sizing: border-box;
+    width: 300px;
+    height: 50px;
+    background-color: #07C09E;
+    border-radius: 30px;
+    margin: 0 20px 20px 0;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 12px 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#plus{
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    font-size: x-large;
+}
+
+.camera{
+    width:50px;
+    height:50px;
+    border: 4px solid #333333;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px 20px 0 0;
+    background-color: white;
+}
+.camera>a>img{
+    height: 90%;
+}
+
+
+
+.leftbox{
+    display: flex;
+    box-sizing: border-box;
+    width: 20%;
+    min-width: 300px;
+    /*height: 700px;*/
+    background-color: #ec4980;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.photo{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: -75px;
+}
+.photo>img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.camera1{
+    width:30px;
+    height:30px;
+    border: 4px solid #333333;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+    margin-top: -50px;
+    margin-right: -110px;
+
+}
+
+.camera1>a>img{
+    height: 90%;
+}
+
+.userName{
+    margin-top: 40px;
+}
+.userCountry>img{
+    width: 20px;
+}
+
+.userCountry{
+    margin-top: 10px;
+}
+
+.dopinfo{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.titles{
+    margin-top: 30px;
+    font-weight: bold;
+    color: black;
+    opacity: 0.4;
+}
+
+.score{
+    margin-top: 10px;
+}
+
+.usersContainer{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.backgricon{
+
+    background-color: white;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.backgricon img{
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.user{
+    text-align: center;
+    font-size: 12px;
+    width: 40px;
+    height: 70px;
+}
+
+.footerOfLeftBox{
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    padding: 5px 0 5px 40px;
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+.footerOfLeftBox>a{
+    text-decoration: none;
+    color: white;
+}
+
+.fonOfFooter{
+    position: absolute;
+    z-index: -1;
+    margin-top: -25px;
+    margin-left: -40px;
+    background-color: black;
+    opacity: 0.15;
+    width: 100%;
+    height: 30px;
+
+}
+
+.footerOfLeftBox:hover>a>.fonOfFooter{
+    background-color: black;
+    opacity: 0.5;
+}
+
