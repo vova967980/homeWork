@@ -1,5 +1,5 @@
 body{
-    margin: 0 100px;
+    margin: 0 100px 50px;
     box-sizing: border-box;
     min-width: 300px;
 }
@@ -24,16 +24,17 @@ body{
 }
 
 .botgR{
-    background-image: url("https://img5.goodfon.ru/wallpaper/nbig/0/c6/tsvety-vetki-vishnia-vesna-rozovye-tsvetenie-boke-sliva-v-ts.jpg");
-    height: 200px;
-    filter: blur(5px);
-    margin: -200px -100px 0 -100px;
+    background-image: url("https://nganhanhblog.files.wordpress.com/2019/04/pexels-photo-385976.jpg");
+    height: 250px;
+    filter: blur(2px);
+    margin: -250px -100px 0 -100px;
     z-index: -1;
     position: relative;
+    min-width: 1200px;
 }
 
 .backgr{
-    background-image: url("https://img5.goodfon.ru/wallpaper/nbig/0/c6/tsvety-vetki-vishnia-vesna-rozovye-tsvetenie-boke-sliva-v-ts.jpg");
+    background-image: url("https://nganhanhblog.files.wordpress.com/2019/04/pexels-photo-385976.jpg");
     background-size: cover;
     width: 100%;
     display: flex;
@@ -41,10 +42,10 @@ body{
     flex-direction: column-reverse;
     justify-content: space-between;
     flex-wrap: wrap-reverse;
-    height: 200px;
-    min-width: 300px;
+    height: 250px;
+    min-width: 1000px;
     object-fit: cover;
-
+    overflow: hidden;
 }
 
 .postaquastion{
@@ -57,9 +58,16 @@ body{
     font-family: sans-serif;
     font-size: 18px;
     text-align: center;
-    color: white;
     text-transform: uppercase;
+    overflow: hidden;
+
+}
+
+.postaquastion div{
+    width:100%;
+    height: 100%;
     padding: 12px 0;
+    color: white;
 }
 
 a{
@@ -75,29 +83,33 @@ a{
 .camera{
     width:50px;
     height:50px;
-    border: 4px solid #333333;
+    /*border: 4px solid #333333;*/
     border-radius: 50%;
     overflow: hidden;
     margin: 20px 20px 0 0;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+
 }
 .camera>a>img{
-    height: 90%;
+    height: 85%;
 }
 
+.mainInfoGlobal{
+    display: flex;
 
+}
 
 .leftbox{
     display: flex;
     box-sizing: border-box;
     width: 20%;
     min-width: 300px;
-    /*height: 700px;*/
     background-color: #ec4980;
     flex-direction: column;
     align-items: center;
     color: white;
     font-family: sans-serif;
+    box-shadow: 0px 1px 2px 0px rgba(156,156,156,1);
 }
 
 
@@ -116,24 +128,24 @@ a{
 .camera1{
     width:30px;
     height:30px;
-    border: 4px solid #333333;
     border-radius: 50%;
     overflow: hidden;
     background-color: white;
     margin-top: -50px;
-    margin-right: -110px;
-
+    margin-right: -119px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .camera1>a>img{
-    height: 90%;
+    height: 85%;
 }
 
 .userName{
     margin-top: 40px;
 }
 .userCountry>img{
-    width: 20px;
+    width: 12px;
+    margin-right: 5px;
 }
 
 .userCountry{
@@ -188,6 +200,17 @@ a{
     height: 70px;
 }
 
+.seeAllBadges{
+    margin-top: 30px;
+}
+
+.seeAllBadges a{
+    color: black;
+    opacity: 0.5;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
 .footerOfLeftBox{
     box-sizing: border-box;
     position: relative;
@@ -196,11 +219,13 @@ a{
     margin-top: 20px;
     width: 100%;
     height: 30px;
+    margin-top: auto;
 }
 
 .footerOfLeftBox>a{
     text-decoration: none;
     color: white;
+
 }
 
 .fonOfFooter{
@@ -220,3 +245,166 @@ a{
     opacity: 0.5;
 }
 
+.boxMainInfo{
+    width: 100%;
+    margin-left: 40px;
+}
+
+.mainMenu{
+    box-sizing: border-box;
+    padding: 0;
+    width:auto;
+    min-width: 660px;
+    border-bottom:solid #dcdcdc;
+}
+
+.mainMenu li{
+    font-size: 18px;
+    height: auto;
+    text-align: center;
+    color: #7f7f7f;
+    padding: 10px 0;
+    font-family: sans-serif;
+    font-weight:500 ;
+    display: inline-block;
+    margin-right: 60px;
+
+}
+
+.mainMenu li:hover {
+    z-index: 10;
+    color:black;
+    opacity: 0.9;
+    border-bottom: 3px solid #ec4980;
+    margin-bottom: -3px;
+}
+
+.selectInfo{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 30px 30px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.selectInfo select{
+    border-radius:30px;
+    padding: 10px 15px;
+}
+
+
+.selectInfo select:focus{
+    border-radius:30px;
+    border-color: #ec4980;
+}
+
+.info{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.mainPart{
+    margin-top: 40px;
+    width:500px;
+    height: fit-content;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+}
+
+.mainPart>*{
+    margin: 10px 10px 0 10px;
+}
+
+.backgriconSomeUser{
+    width:50px;
+    height: 50px;
+    background-color: #ec4980;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.backgriconSomeUser img{
+    width: 50px;
+    height: auto;
+}
+
+.nameSomeUser{
+    font-family: sans-serif;
+    font-size: 16px;
+    width: fit-content;
+}
+
+.timeSomeUser{
+    font-family: sans-serif;
+    font-size: 12px;
+    opacity: 0.6;
+    width: fit-content;
+}
+
+.topicContainer{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #6f6f6f;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    padding: 1px 5px;
+    width: fit-content;
+    margin-right: 15px;
+}
+
+.topicContainer img{
+    width:10px;
+    height: auto;
+    margin-right: 10px;
+}
+.icon3points img{
+    width:17px;
+    height: auto;
+}
+.head1{
+    /*display: flex;*/
+
+}
+
+.someUser, .rightContainer{
+    display: flex;
+    align-items: center;
+}
+
+.head1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.body{
+    font-family: sans-serif;
+    font-size: 20px;
+    /*letter-spacing: 1px;*/
+}
+
+.footer2{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #eaeaea;
+    margin: 30px 0 0 0;
+    padding: 10px 30px;
+    color: #ec4980;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer2 img{
+    width:20px;
+}
+.likeAndLink img+img{
+    margin-left: 10px;
+}
